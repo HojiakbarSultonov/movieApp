@@ -6,6 +6,7 @@ import { IMovie } from 'src/interfaces/app.interface';
 
 
 
+
 export default function Home({trending, topRated, tvTopRated, popular, documentary, comedy,family, history}: HomeProps) {
 console.log(tvTopRated);
 
@@ -22,6 +23,7 @@ console.log(tvTopRated);
       <main className='relative pl-4 pb-24 lg:space-y-24 lg:pl-16'>
     <Hero trending = {trending}/>
     <section>
+   
       <Row title="Top Rated" movies = {topRated}/>
       <Row title="Tv Show" movies = {tvTopRated} isBig={true}/>
       <Row title="Popular" movies = {popular} />
